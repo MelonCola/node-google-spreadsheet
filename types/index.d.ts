@@ -1114,6 +1114,8 @@ export class GoogleSpreadsheet implements SpreadsheetBasicProperties {
 	 */
 	readonly sheetCount: number;
 
+	setRetryOptions(retries: number, retryDelay: number): void;
+
 	createDeveloperMetadata(
 		metadataKey: string,
 		metadataValue: string,
